@@ -2,8 +2,81 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+        	  a::before {
+                content: "\21d2  Click here: ";
+                font-weight: bold;
+            }
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+             @media (min-width: 500px) {
+                h1::before {
+                    content: "欢迎检查欢迎检查欢迎检查欢迎检查!";
+                }
+            }
+
+            @media (max-width: 499px) {
+                h1::before {
+                    content: "欢迎欢迎!";
+                }
+            }
+            .row > div {
+                padding: 30px;
+                background-color: blue;
+                border: 2px solid black;
+            }
+          
+        </style>
     </head>
-<body>
-        Hello, world!
+		<body>
+			
+			<div class="container">
+				<h1></h1>
+				<ul>
+					<li><a href="#">"http://www.4399.com"</a></li>
+        
+        	<li><p>至少有一个stylesheet文件</p></li>
+        	
+        	<li> <p class="screen-only">这句话打印不出来~~</p> </li>
+        	
+         	
+        </ul>
+        		<div class="row">
+                <div class="col-3">
+                    1
+                </div>
+                <div class="col-3">
+                    2
+                </div>
+                <div class="col-3">
+                    3
+                </div>
+                <div class="col-3">
+                    4
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                   1
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    2
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    3
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    4
+            </div>
+            
+        <button type="button" class="btn btn-success">Success</button>
+      </div>
+        
     </body>
 </html>
